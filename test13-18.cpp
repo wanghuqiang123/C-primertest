@@ -22,7 +22,7 @@ public:
 		data.name = s;
 	}
 	//拷贝构造函数，三五法则；
-	Empolyee(const Empolyee& obj) 
+	Empolyee(const Empolyee& obj)  //合成的拷贝构造函数不会去加序号，只会简单的复制
 	{
 		this->data.name = obj.data.name;
 		this->data.number = ++a;
